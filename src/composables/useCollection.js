@@ -4,7 +4,7 @@ import { projectFirestore } from "../firebase/config";
 const useCollection = (collection) => {
   const error = ref(null);
   const isPenging = ref(false);
- 
+
   const addDoc = async (doc) => {
     error.value = null;
     isPenging.value = true;
